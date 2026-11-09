@@ -1,0 +1,31 @@
+name: Koto S25 payload and helper from source
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install fixed NDK
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'ndk;28.2.13676358'
+          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/28.2.13676358" >> "$GITHUB_ENV"
+      - name: Build exact S931B profile and bootstrap helper
+        shell: bash
+        run: |
+          set -euo pipefail
+          make TARGET=pa1q-S931BXXS9CZE1 release build/pa1q-S931BXXS9CZE1/cve-2026-43499-root
+          mkdir -p out
+          cp build/pa1q-S931BXXS9CZE1/cve-2026-43499-app.release.so out/payload.so
+          cp build/pa1q-S931BXXS9CZE1/cve-2026-43499-root out/libcve43499root.so
+          git rev-parse HEAD > out/source-commit.txt
+          sha256sum out/*.so > out/SHA256SUMS
+      - uses: actions/upload-artifact@v7
+        with:
+          name: koto-s25-native
+          path: out/
+          if-no-files-found: error

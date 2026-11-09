@@ -1,3 +1,11 @@
+# KotoRoot native source fork
+
+Personal source builds for SM-S931B / S931BXXS9CZE1. The `koto-source.yml` workflow builds both the exact-firmware payload and bootstrap helper from this source tree with NDK 28.2.13676358. See [the exact firmware audit](docs/SM-S931B-S931BXXS9CZE1-Koto.md). Hardware root validation of this new profile is pending; the old general S25 profile failed on this firmware.
+
+Original upstream documentation follows.
+
+---
+
 # Root My Galaxy Payloads
 
 This repository contains the device-specific native side of

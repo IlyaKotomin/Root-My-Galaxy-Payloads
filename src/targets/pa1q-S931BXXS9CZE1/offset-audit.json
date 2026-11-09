@@ -1,0 +1,149 @@
+[
+  {
+    "constant": "ASHMEM_MISC_FOPS_OFF",
+    "symbol": "ashmem_misc",
+    "old": "0x247d7f0",
+    "exact": "0x247d7f0",
+    "match": true
+  },
+  {
+    "constant": "ASHMEM_FOPS_OFF",
+    "symbol": "ashmem_fops",
+    "old": "0x140b440",
+    "exact": "0x140b440",
+    "match": true
+  },
+  {
+    "constant": "ASHMEM_IOCTL_OFF",
+    "symbol": "ashmem_ioctl",
+    "old": "0xd70dfc",
+    "exact": "0xd70dfc",
+    "match": true
+  },
+  {
+    "constant": "ASHMEM_COMPAT_IOCTL_OFF",
+    "symbol": "compat_ashmem_ioctl",
+    "old": "0xd714b8",
+    "exact": "0xd714b8",
+    "match": true
+  },
+  {
+    "constant": "ASHMEM_MMAP_OFF",
+    "symbol": "ashmem_mmap",
+    "old": "0xd7150c",
+    "exact": "0xd7150c",
+    "match": true
+  },
+  {
+    "constant": "ASHMEM_OPEN_OFF",
+    "symbol": "ashmem_open",
+    "old": "0xd7172c",
+    "exact": "0xd7172c",
+    "match": true
+  },
+  {
+    "constant": "ASHMEM_RELEASE_OFF",
+    "symbol": "ashmem_release",
+    "old": "0xd717b4",
+    "exact": "0xd717b4",
+    "match": true
+  },
+  {
+    "constant": "ASHMEM_SHOW_FDINFO_OFF",
+    "symbol": "ashmem_show_fdinfo",
+    "old": "0xd71840",
+    "exact": "0xd71840",
+    "match": true
+  },
+  {
+    "constant": "CONFIGFS_READ_ITER_OFF",
+    "symbol": "configfs_read_iter",
+    "old": "0x4954b8",
+    "exact": "0x4954b8",
+    "match": true
+  },
+  {
+    "constant": "CONFIGFS_BIN_WRITE_ITER_OFF",
+    "symbol": "configfs_bin_write_iter",
+    "old": "0x4959e4",
+    "exact": "0x4959e4",
+    "match": true
+  },
+  {
+    "constant": "COPY_SPLICE_READ_OFF",
+    "symbol": "copy_splice_read",
+    "old": "0x416970",
+    "exact": "0x416970",
+    "match": true
+  },
+  {
+    "constant": "NOOP_LLSEEK_OFF",
+    "symbol": "noop_llseek",
+    "old": "0x3c9450",
+    "exact": "0x3c9450",
+    "match": true
+  },
+  {
+    "constant": "INIT_TASK_OFF",
+    "symbol": "init_task",
+    "old": "0x230e4c0",
+    "exact": "0x230e4c0",
+    "match": true
+  },
+  {
+    "constant": "ROOT_TASK_GROUP_OFF",
+    "symbol": "root_task_group",
+    "old": "0x251cd80",
+    "exact": "0x251cd80",
+    "match": true
+  },
+  {
+    "constant": "SELINUX_ENFORCING_OFF",
+    "symbol": "selinux_state",
+    "old": "0x255f5c0",
+    "exact": "0x255f5c0",
+    "match": true
+  },
+  {
+    "constant": "KMALLOC_CACHES_OFF",
+    "symbol": "kmalloc_caches",
+    "old": "0x17da710",
+    "exact": "0x17da850",
+    "match": false
+  },
+  {
+    "constant": "ANON_PIPE_BUF_OPS_OFF",
+    "symbol": "anon_pipe_buf_ops",
+    "old": "0x124cdc8",
+    "exact": "0x124cdc8",
+    "match": true
+  },
+  {
+    "constant": "CALL_USERMODEHELPER_EXEC_WORK_OFF",
+    "symbol": "call_usermodehelper_exec_work",
+    "old": "0xd0eac",
+    "exact": "0xd0eac",
+    "match": true
+  },
+  {
+    "constant": "SYSTEM_UNBOUND_WQ_OFF",
+    "symbol": "system_unbound_wq",
+    "old": "0x22fae60",
+    "exact": "0x22fae60",
+    "match": true
+  },
+  {
+    "constant": "SLIDE_NFULNL_LOGGER_OBJECT_OFF",
+    "symbol": "nfulnl_logger",
+    "old": "0x2302278",
+    "exact": "0x2302278",
+    "match": true
+  },
+  {
+    "constant": "SLIDE_RANDOM_TABLE_BOOT_ID_DATA_PTR_OFF",
+    "symbol": "random_table",
+    "old": "0x2439490",
+    "exact": "0x2439490",
+    "match": true
+  }
+]
